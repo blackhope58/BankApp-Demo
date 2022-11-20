@@ -1,0 +1,143 @@
+import {Dimensions, StyleSheet} from 'react-native';
+
+let w = Dimensions.get('screen').width;
+let h = Dimensions.get('screen').height;
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  header_container: {
+    width: w,
+    height: h / 11,
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    top: 10,
+  },
+  header_text: {
+    color: 'white',
+    fontSize: 30,
+    fontWeight: '800',
+  },
+  balance_container: {
+    backgroundColor: '#f7f7f7',
+    width: w / 1.2,
+    height: h / 4.5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 25,
+    elevation: 5,
+  },
+  balance_text: {
+    color: 'black',
+    fontSize: w / 13,
+    fontWeight: '700',
+  },
+  sendPayment_button: {
+    backgroundColor: '#F99E1D',
+    width: w / 2.8,
+    height: h / 20,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 40,
+  },
+  receiverId_textInput: {
+    backgroundColor: '#ededed',
+    width: w / 1.3,
+    borderRadius: 15,
+    borderColor: 'white',
+    borderWidth: 2,
+    padding: 4,
+  },
+  amount_textInput: {
+    backgroundColor: '#ededed',
+    width: w / 1.3,
+    borderRadius: 15,
+    borderColor: 'white',
+    borderWidth: 2,
+    padding: 4,
+    marginTop: 10,
+  },
+  banks_container: {
+    height: h / 2.2,
+    width: w / 1.2,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 5,
+  },
+  OnlyBanks_container: {
+    backgroundColor: '#f7f7f7',
+    width: w / 1.2,
+    height: h / 14,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    borderRadius: 15,
+    elevation: 5,
+    paddingLeft: 15,
+    flexDirection: 'row',
+    marginTop: 10,
+  },
+  banks_text: {
+    color: 'black',
+    fontWeight: '500',
+    fontSize: w / 14,
+    marginLeft: 10,
+    width: w / 1.9,
+  },
+  banks_logo: {
+    width: 45,
+    height: 45,
+    borderRadius: 10,
+  },
+  sendicon: {
+    width: 32,
+    height: 32,
+    paddingRight: 15,
+  },
+
+  balance_container2: {
+    backgroundColor: '#f7f7f7',
+    width: w / 1.2,
+    height: h / 4.5,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    borderRadius: 25,
+    elevation: 5,
+  },
+  sendPayment_button2: {
+    backgroundColor: '#F99E1D',
+    width: w / 3.3,
+    height: h / 20,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  sendPayment_button_no: {
+    backgroundColor: '#e08506',
+    width: w / 3.3,
+    height: h / 20,
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  amount: {
+    color: 'black',
+    fontSize: 25,
+    fontWeight: '600',
+  },
+  receiver: {
+    color: 'black',
+    fontSize: 25,
+    fontWeight: '400',
+  },
+  loaingText_text: {
+    color: 'black',
+    fontSize: 25,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+});
